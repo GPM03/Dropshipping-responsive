@@ -1,0 +1,28 @@
+.price {
+    display: block;
+    position: relative;
+    line-height: 2;
+    font-weight: bold;
+
+    &--card {
+        font-size: 4rem;
+    }
+
+    &__supsub-container {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    &__sup, &__sub {
+        display: block;
+        line-height: 1;
+    }
+
+    &__sup {
+        font-size: .6em;
+    }
+
+    &__sub {
+        font-size: .2em;
+    }
+}

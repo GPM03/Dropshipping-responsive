@@ -1,0 +1,27 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; //10px
+}
+
+body {
+    position: relative;
+    background-color: $background-color;
+    line-height: 2;
+}
+
+main {
+    position: relative;
+}
+
+::marker {
+    font-size: 25px;
+    color: $primary-color;
+    line-height: normal;
+}

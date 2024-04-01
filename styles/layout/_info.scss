@@ -1,0 +1,40 @@
+.info {
+    padding: 5rem 10rem;
+    font-size: 1.6rem;
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 5rem 3rem;
+    }
+
+    &__sequence-logo {
+        display: block;
+        width: 23rem;
+        padding-bottom: 2rem;
+    }
+
+    &__a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__address {
+        display: inline-block;
+        line-height: 2;
+        font-style: normal;
+    }
+
+    &__ul {
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 10rem;
+
+        @media only screen and (max-width: 62em) {
+            display: block;
+            padding-left: 0;
+            padding-top: 2rem;
+        }
+
+    }
+
+    // &__li{}
+}

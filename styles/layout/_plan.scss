@@ -1,0 +1,89 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+.plan {
+    padding: 4rem;
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 1rem;
+    }
+
+    &--seller {
+        background-color: $primary-color;
+    }
+
+    &--distributor {
+        background-color: $background-color;
+    }
+
+    &__h2 {
+        font-size: 6rem;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+
+
+        @media only screen and (max-width: 62em) {
+            font-size: 4.5rem;
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            font-size: 3.5rem;
+        }
+
+        &--seller {
+            color: white;
+        }
+
+        &--distributor {
+            color: $primary-color
+        }
+    }
+
+    &__p {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width: 62em) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: 37.5em) {
+            font-size: 2rem;
+        }
+
+        &--seller {
+            color: white;
+        }
+
+        &--distributor {
+            color: $primary-color
+        }
+
+        &--small {
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 5rem 0 2rem 0;
+
+            &--seller {
+                color: white;
+            }
+
+            &--distributor {
+                color: $primary-color
+            }
+        }
+    }
+
+    &__card-container {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        text-align: center;
+    }
+}
+
+// .plan--seller {}

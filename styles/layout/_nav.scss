@@ -1,0 +1,39 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+/* navegação superior */
+
+.nav {
+
+    &__ul {
+        list-style-type: none;
+        float: right;
+        font-size: 2rem;
+        padding: 3rem 6rem 3rem 3rem;
+
+        @media only screen and (max-width: 62em) {
+            padding: 1rem 2rem 1rem 1rem;
+        }        
+    }
+
+    &__li {
+        float: left;
+        padding: 3rem 3rem;
+
+        @media only screen and (max-width: 62em) {
+            padding: 2rem 2rem;
+        }
+
+    }
+
+    &__a {
+        display: inline-block;
+        color: $primary-color;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 48em) {
+        display: none;
+    }
+
+}

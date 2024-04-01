@@ -1,0 +1,57 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+.balance {
+    background-color: $primary-color;
+    padding: 3rem 10rem 2rem 10rem;
+    position: relative;
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 3rem 3rem 2rem 3rem;
+    }
+
+    &__h2 {
+        font-size: 6rem;
+        color: white;
+        margin: 0;
+        font-weight: bold;
+        line-height: 1.5;
+
+        @media only screen and (max-width: 62em) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: 48em) {
+            text-align: center;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+    }
+
+    &__li {
+        color: white;
+        font-size: 1.6rem;
+        line-height: 1.5;
+
+        @media only screen and (max-width: 48em) {
+            text-align: center;
+        }
+    }
+
+    &__strong {
+        font-size: 4rem;
+        color: white;
+        position: absolute;
+        top: 3rem;
+        right: 11rem;
+
+        @media only screen and (max-width: 48em) {
+            position: static;
+            display: block;
+            text-align: center;
+        }
+
+    }
+}

@@ -1,0 +1,61 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+.newsletter {
+    padding: 5rem;
+    display: block;
+
+    @media only screen and (max-width: 37.5em) {
+        padding: 5rem 3rem;
+    }
+
+    &__h2 {
+        color: $primary-color;
+        font-size: 4rem;
+        text-align: center;
+        line-height: 1.5;
+
+        @media only screen and (max-width: 37.5em) {
+            font-size: 3rem;
+        }
+    }
+
+    &__form {
+        text-align: center;
+
+    }
+
+    &__submit {
+        border: none;
+    }
+
+    &__label {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        margin: 2rem;
+    }
+
+    &__placeholder {
+        position: absolute;
+        margin-left: 1.8rem;
+        z-index: 2;
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 1.6rem;
+    }
+
+    &__input {
+        position: relative;
+        border: none;
+        padding: 1rem 1rem 1rem 1.8rem;
+        font: inherit;
+        font-size: 1.6rem;
+        width: 30rem;
+
+        &:focus {
+            z-index: 3;
+        }
+    }
+}

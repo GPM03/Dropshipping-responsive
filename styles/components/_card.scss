@@ -1,0 +1,76 @@
+@forward "../abstracts/variables.scss";
+@use "../abstracts/variables" as *;
+
+.card {
+    display: inline-block;
+    text-align: center;
+    width: 36rem;
+    transition: box-shadow 0.2s;
+    transition-timing-function: ease-in-out;
+    padding-bottom: 2rem;
+    border-radius: 5rem;
+    margin: 1rem;
+
+    &--seller {
+        background-color: $background-color;
+
+        &:hover {
+            box-shadow: 0 0 5px 3px $background-color;
+        }
+    }
+
+    &--distributor {
+        background-color: $primary-color;
+
+        &:hover {
+            box-shadow: 0 0 5px 3px $primary-color;
+        }
+    }
+
+    &__h3 {
+        font-size: 4rem;
+        font-weight: bold;
+
+        &--seller {
+            color: $primary-color;
+        }
+
+        &--distributor {
+            color: $background-color;
+        }
+    }
+
+    &__ul {
+    display: inline-block;
+    }
+
+    &__li {
+        font-size: 1.6rem;
+        &:last-of-type {
+            margin-top: 30px;
+        }
+
+        &--seller {
+            color: black;
+        }
+
+        &--distributor {
+            color: white;
+        }
+    }
+
+    &__abbr {
+    text-decoration: none;
+    }
+
+    &__strong {
+
+        &--seller {
+            color: $primary-color;
+        }
+
+        &--distributor {
+            color: white;
+        }
+    }
+}
