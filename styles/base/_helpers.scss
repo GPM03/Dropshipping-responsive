@@ -1,0 +1,10 @@
+// This file contains CSS helper classes.
+
+/**
+ * Clear inner floats
+ */
+ .clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}

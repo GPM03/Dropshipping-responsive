@@ -1,22 +1,28 @@
+@use "abstracts/functions";
+@use "abstracts/mixins";
 @use "abstracts/variables";
 
-@use "base/reset";
-@use "base/base";
-@use "base/typography";
+@use "vendors/normalize";
 
-@use "layout/nav";
-@use "layout/logo";
-@use "layout/sequence";
-@use "layout/plan";
-@use "layout/balance";
-@use "layout/newsletter";
-@use "layout/info";
-@use "layout/footer-bar";
+@use "base/base";
+@use "base/fonts";
+@use "base/helpers";
+@use "base/typography";
 
 @use "components/button";
 @use "components/card";
 @use "components/price";
 @use "components/scroll-to-top";
-@use "components/clearfix";
+
+@use "layout/balance";
+@use "layout/footer-bar";
+@use "layout/info";
+@use "layout/logo";
+@use "layout/nav";
+@use "layout/newsletter";
+@use "layout/plan";
+@use "layout/sequence";
 
 // @use "pages/";
+
+// @use "themes/";

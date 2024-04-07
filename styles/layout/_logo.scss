@@ -1,9 +1,9 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains all styles related to the logo.
+
+@use "../abstracts" as *;
 
 .logo {
     margin: 0 7rem;
-    height: 50rem;
     width: calc(100% - 14rem); //full width - margins
     padding-top: 3rem;
 
@@ -31,7 +31,7 @@
         font-size: 10rem;
         font-weight: bold;
         color: $primary-color;
-        line-height: 1;
+        line-height: 0;
 
         @media only screen and (max-width: 62em) {
             font-size: 7rem;

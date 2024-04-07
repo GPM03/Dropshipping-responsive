@@ -1,5 +1,6 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains all styles related to the card component.
+
+@use "../abstracts" as *;
 
 .card {
     display: inline-block;
@@ -46,6 +47,8 @@
 
     &__li {
         font-size: 1.6rem;
+        list-style: none;
+
         &:last-of-type {
             margin-top: 30px;
         }
@@ -59,7 +62,7 @@
         }
     }
 
-    &__abbr {
+    &__abbr[title] {
     text-decoration: none;
     }
 

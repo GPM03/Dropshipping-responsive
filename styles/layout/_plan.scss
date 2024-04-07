@@ -1,5 +1,6 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains all styles related to the plna.
+
+@use "../abstracts" as *;
 
 .plan {
     padding: 4rem;
@@ -20,7 +21,7 @@
         font-size: 6rem;
         text-align: center;
         font-weight: bold;
-        line-height: 1.5;
+        line-height: 1;
         padding-bottom: 2rem;
 
 

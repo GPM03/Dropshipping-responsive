@@ -1,5 +1,6 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains all styles related to the button component.
+
+@use "../abstracts" as *;
 
 .button {
     font-size: 2rem;

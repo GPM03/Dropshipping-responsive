@@ -1,13 +1,15 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains very basic styles.
+
+@use "../abstracts" as *;
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; //10px
 }
 
 body {

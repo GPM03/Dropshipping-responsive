@@ -1,5 +1,6 @@
-@forward "../abstracts/variables.scss";
-@use "../abstracts/variables" as *;
+// This file contains all styles related to the newsletter.
+
+@use "../abstracts" as *;
 
 .newsletter {
     padding: 5rem;
