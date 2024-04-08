@@ -481,33 +481,47 @@ html {
 .card__abbr[title] {
   text-decoration: none;
 }
-.card__strong--seller {
-  color: #023DFF;
-}
-.card__strong--distributor {
-  color: white;
-}
 
 .price {
   display: block;
   position: relative;
   line-height: 2;
   font-weight: bold;
-}
-.price--card {
   font-size: 4rem;
+}
+.price--seller {
+  color: #023DFF;
+}
+.price--distributor {
+  color: white;
+}
+.price--balance {
+  font-size: 4rem;
+  color: white;
+  position: absolute;
+  top: 3rem;
+  right: 11rem;
+}
+@media only screen and (max-width: 48em) {
+  .price--balance {
+    position: static;
+    display: block;
+    text-align: center;
+  }
+}
+.price__left-digit {
+  display: inline-block;
 }
 .price__supsub-container {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 .price__sup, .price__sub {
   display: block;
-  line-height: 1;
+  line-height: 0.3;
 }
 .price__sup {
   font-size: 0.6em;
-  top: 0;
 }
 .price__sub {
   font-size: 0.2em;
@@ -567,20 +581,6 @@ html {
 }
 @media only screen and (max-width: 48em) {
   .balance__li {
-    text-align: center;
-  }
-}
-.balance__strong {
-  font-size: 4rem;
-  color: white;
-  position: absolute;
-  top: 3rem;
-  right: 11rem;
-}
-@media only screen and (max-width: 48em) {
-  .balance__strong {
-    position: static;
-    display: block;
     text-align: center;
   }
 }
@@ -868,12 +868,6 @@ html {
   font-size: 1.6rem;
   text-align: center;
   margin: 5rem 0 2rem 0;
-}
-.plan__p--small--seller {
-  color: white;
-}
-.plan__p--small--distributor {
-  color: #023DFF;
 }
 .plan__card-container {
   overflow-x: scroll;

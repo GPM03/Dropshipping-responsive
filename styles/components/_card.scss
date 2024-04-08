@@ -65,15 +65,4 @@
     &__abbr[title] {
     text-decoration: none;
     }
-
-    &__strong {
-
-        &--seller {
-            color: $primary-color;
-        }
-
-        &--distributor {
-            color: white;
-        }
-    }
 }
