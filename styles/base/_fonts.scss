@@ -1,0 +1,25 @@
+// This file contains all @font-face declarations, if any.
+
+@font-face {
+    font-family: NeueHansKendrick;
+    src: url("../materials/Fontes/NeueHansKendrick-Regular.otf");
+}
+
+@font-face {
+    font-family: NeueHansKendrick;
+    src: url("../materials/Fontes/NeueHansKendrick-RegularItalic.otf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NeueHansKendrick;
+    src: url("../materials/Fontes/NeueHansKendrick-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: NeueHansKendrick;
+    src: url("../materials/Fontes/NeueHansKendrick-BoldItalic.otf");
+    font-weight: bold;
+    font-style: italic;
+}

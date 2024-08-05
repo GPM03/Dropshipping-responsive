@@ -1,0 +1,10 @@
+// This file contains all application-wide Sass mixins.
+
+/**
+ * Clear inner floats
+ */
+ @mixin clearfix {
+    content: "";
+    clear: both;
+    display: table;
+  }

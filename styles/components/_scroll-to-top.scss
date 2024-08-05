@@ -1,0 +1,21 @@
+// This file contains all styles related to the scroll-to-top component.
+
+@use "../abstracts" as *;
+
+.scroll-to-top {
+    background-color: $primary-color;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    margin-top: 105vh;
+
+    &__img {
+        filter: invert(82%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(104%) contrast(102%);
+        vertical-align: middle;
+    }
+}
