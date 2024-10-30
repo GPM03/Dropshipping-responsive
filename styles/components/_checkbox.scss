@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+// made with the help of this guide: https://moderncss.dev/pure-css-custom-checkbox-style/
+
+.checkbox {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    &__input {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        appearance: none;
+
+        background-color: $background-color ;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 0.1rem solid $primary-color;
+        border-radius: 0.4rem;
+        position: relative;
+        transform: translateY(0.2rem);
+        margin-right: 0.5rem;
+
+        &::before {
+            content: "";
+            width: 1.2rem;
+            height: 1.2rem;
+            transform: scale(0);
+            box-shadow: inset 1rem 1rem white;
+
+            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:checked {
+            background-color: $primary-color;
+        }
+
+        &:checked::before {
+            display: inline-block;
+            transform: scale(1);
+            transform: translate(-50%, -50%);
+        }
+      }
+      &__span {
+        font-size: 1.4rem;
+      }
+
+}

@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.about-us {
+    padding-top: 6.5em;
+
+    &__h2 {
+        margin: 0 9rem;
+        font-size: 6.5rem;
+        font-weight: bold;
+        color: $primary-color;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 3.25rem;
+            margin: 0 3rem;
+        }
+    }
+
+    &__p {
+        font-size: 1.6rem;
+        margin: 0 9rem;
+        padding-bottom: 9rem;
+
+        @media screen and (max-width: $tablet) {
+            margin: 0 3rem;
+        }
+
+        &--white{
+            color: white;
+            padding-top: 8rem;
+        }
+    }
+
+    &__section {
+        background-color: $primary-color;
+        
+    }
+}

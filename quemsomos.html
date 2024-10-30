@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quem somos</title>
+        <link rel="icon" type="image/x-icon" href="materials/img/favicon.svg">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <script src="scripts/menu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav">
+                <button class="nav__button">
+                    <!-- SVG from: https://codepen.io/shephero/pen/LYVrdjX?editors=1010 -->
+                    <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                          <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                          <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                          <animate  class="svg-close-animation" dur="2s" id="reverse" attributeName="width" begin="indefinite" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                          <animate class="svg-open-animation" dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="indefinite" />
+                          <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                        </rect>
+                      </svg>
+                </button>
+                <ul class="nav__ul">
+                    <li class="nav__li">
+                        <a class="nav__a" href="quemsomos.html">Sobre</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Termos de Uso</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Perguntas Frequentes</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="contato.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="logo">
+                    <img class="logo__sequence" src="materials/img/sequence-logo.svg" alt="Sequence">
+                    <h1 class="logo__h1">
+                        <a class="logo__a" href="index.html">Dropshipping</a>
+                    </h1>
+            </article>
+        </header>
+        <main>
+            <article class="about-us">
+                <h2 class="about-us__h2">Quem somos</h2>
+                <p class="about-us__p">Nulla nisi diam, maximus non sem varius, tincidunt auctor est. Donec scelerisque odio hendrerit enim condimentum, ac efficitur elit hendrerit. Ut ligula augue, fermentum nec odio at, rhoncus congue sem. Curabitur vitae rhoncus lorem. Pellentesque euismod efficitur aliquam. Duis arcu turpis, facilisis sit amet tellus eget, hendrerit euismod elit. Quisque orci justo, interdum eget neque ultrices, scelerisque rhoncus metus. Duis a nunc elit. Mauris vulputate rhoncus diam sed placerat. Aliquam placerat mauris ex, eu faucibus lorem iaculis nec. Fusce hendrerit, nibh in consectetur malesuada, nibh justo tristique lorem, quis varius neque eros vitae mauris. Fusce condimentum interdum dolor et auctor. Donec commodo placerat arcu id porta. Ut vestibulum sem sem, nec interdum ipsum lobortis ac. Suspendisse elementum mauris mi, sit amet lacinia lorem gravida mattis.</p>
+                <section class="about-us__section">
+                    <p class="about-us__p about-us__p--white">Uma solução SaaS (Software as a Service) imediata, estratégica e já validada para a cenário de e-commerce brasileiro, destinado aos sellers que não possuem estoque fisico de produto, que dependem de processos manuais para tratar o fluxo de pedidos e reposição de saldo de produtos com seus distribuidores.</p>
+                </section>
+            </article>
+    
+            <article class="benefits">
+                <h2 class="benefits__h2">Benefícios do Sistema</h2>
+                <dl class="benefits__dl">
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Importação</dt>
+                        <dd class="benefits__dd">Importação de pedidos de plataforma de loja virtual ou ERP;</dd>
+                    </div>
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Dados</dt>
+                        <dd class="benefits__dd">Importação de produtos, fornecedores, transportadoras e consumidores;</dd>
+                    </div>
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Acompanhamento</dt>
+                        <dd class="benefits__dd">Painel de acesso ao fornecedor para acompanhamento de pedido, troca de status do pedido de compras e ajuste de saldo de produtos;</dd>
+                    </div>
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Presença</dt>
+                        <dd class="benefits__dd">Notificações de pedido de compras ao fornecedor e demais trocas de status;</dd>
+                    </div>
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Organização</dt>
+                        <dd class="benefits__dd">Desmembramento do pedido de vendas para pedidos de compra, agrupando produtos por fornecedores;</dd>
+                    </div>
+                    <div class="benefits__div">
+                        <dt class="benefits__dt">Agilidade</dt>
+                        <dd class="benefits__dd">API Rest Full de integração com ERP's para captura de pedido de compra pelo distribuidor, troca de status e reposição de saldo de produto.</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="newsletter">
+                <h2 class="newsletter__h2">Cadastre-se e receba nossas novidades!</h2>
+                <form class="newsletter__form">
+                    <label class="newsletter__label">
+                        <input class="newsletter__input" placeholder="Nome" type="text" name="nome">
+                    </label>
+                    <label class="newsletter__label">
+                        <input class="newsletter__input" placeholder="E-mail" type="text" name="email">
+                    </label>
+                    <input class="button button--submit button--blue" type="submit" value="Enviar">
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <div class="info">
+                <img class="info__sequence-logo" src="materials/img/sequence-logo.svg" alt="Sequence">
+                <address class="info__address">
+                    <a class="info__a" href="#">Rua Carlos Ranzi, 316 - Sala 1 - Santa Maria, Bento Gonçalves - RS</a> <br>
+                    <a class="info__a" href="tel:054991465632">(54) 99146-5632</a> / <a class="info__a" href="tel:054996875541">(54) 99687-5541</a> <br>
+                    <a class="info__a" href="mailto:contato@goondesign.com.br">contato@goondesign.com.br</a>
+                </address>
+                <ul class="info__ul">
+                    <li class="info__li"><a class="info__a" href="#">Home</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Termos de Uso</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bar">
+                <img class="footer-bar__goon-logo" src="materials/img/goon-logo.svg" alt="Goon">
+                <small class="footer-bar__small">@2021 - Todos os direitos reservados</small>
+            </div>
+        </footer>
+        <a class="scroll-to-top" href="#" title="Voltar ao topo">
+            <img class="scroll-to-top__img" src="materials/img/chevron-thin-up.svg" width="24" height="24" aria-hidden="true" alt="voltar para o topo da página">
+        </a>
+    </body>
+</html>

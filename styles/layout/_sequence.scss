@@ -1,0 +1,50 @@
+// This file contains all styles related to the sequence.
+
+@use "../abstracts" as *;
+
+.sequence {
+    margin: 7rem;
+    clear: right;
+
+    @media screen and (max-width: $tablet) {
+        margin: 7rem 3rem;
+    }
+}
+
+.sequence__h2 {
+    color: $primary-color;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 3.5rem;
+    }
+}
+
+.sequence__p {
+    font-size: 1.6rem;
+}
+
+.sequence__ul {
+    margin-top: 4rem;
+}
+
+.sequence__li {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+
+.sequence__strong {
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.sequence__b {
+    color: $primary-color;
+    font-weight: bold;
+}

@@ -1,0 +1,77 @@
+@use "../abstracts" as *;
+
+.benefits {
+    margin: 3rem 12.48%;
+    counter-reset: benefícios 0;
+
+    &::after {
+        @include clearfix;
+    }
+
+    &__h2{
+        font-size: 6.5rem;
+        text-align: center;
+        color: $primary-color;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 3.25rem;
+        }
+    }
+
+    &__div {
+        counter-increment: benefícios 1;
+        font-weight: bold;
+        display: inline-block;
+        width: 49%;
+
+        &::after {
+            @include clearfix;
+        }
+
+        @media screen and (max-width: $benefits-mq) {
+            display: block;
+            margin: 0 auto 4rem auto;
+            width: 100%;
+        }
+
+        &::before {
+            content: counter(benefícios) "";
+            float: left;
+            font-size: 9rem;
+            margin-right: 2rem;
+            color: $primary-color;
+            line-height: 1.2;
+            
+
+            @media screen and (max-width: $tablet) {
+                font-size: 4.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &__dt {
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: normal;
+        line-height: 1;
+        padding-top: 1.5rem;
+        margin: 0;
+        text-wrap: nowrap;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    &__dd {
+        font-weight: normal;
+        font-size: 1.6rem;
+        color: black;
+        margin-left: 7.7rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-left: 3.4rem;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@use "../abstracts" as *;
+
+.contact {
+    width:fit-content;
+    margin: auto;
+    margin-bottom: 10rem;
+    &__h2 {
+        font-size: 6.5rem;
+        text-align: center;
+        margin-top: 10.5rem;
+        color: $primary-color;
+        line-height: 1;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 3.25rem;
+        }
+        
+    }
+
+    &__p {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+
+        @media screen and (max-width: $tablet) {
+            width:100%;            
+        }
+    }
+
+    &__plano-selecionado {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+
+    &__row {
+        margin-bottom: 4rem;
+        display: flex;
+        justify-content: space-between;
+        
+        @media screen and (max-width: $tablet) {
+            flex-wrap: wrap;
+            gap: 4rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__col-100 {
+        width: 100%;
+        margin: 0 1rem;
+    }
+    
+    &__col-50 {
+        width: 50%;
+        margin: 0 1rem;
+
+        @media screen and (max-width: $tablet) {
+            width:100%;            
+        }
+    }
+    
+    &__col-25 {
+        width: 25%;
+        margin: 0 1rem;
+
+        @media screen and (max-width: $tablet) {
+            width:100%;            
+        }
+    }
+    
+    &__col-33 {
+        width: 33.333%;
+        margin: 0 1rem;
+        flex-shrink: 2;
+
+        @media screen and (max-width: $tablet) {
+            flex-shrink: 1;
+            width: 100%;
+        }
+    }
+    
+    &__col-16 {
+        width: 16.666%;
+        margin: 0 1rem;
+        flex-shrink: 2;
+
+        @media screen and (max-width: $tablet) {
+            flex-shrink: 1;
+            width: 100%;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        border: none;
+
+    &::placeholder {
+        opacity: 1;
+        color: black;
+    }
+
+    &::-ms-input-placeholder { /* Edge 12-18 */
+        opacity: 1;
+        color: black;
+      }
+    }
+}

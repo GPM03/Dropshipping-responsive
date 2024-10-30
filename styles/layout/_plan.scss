@@ -1,0 +1,83 @@
+// This file contains all styles related to the plna.
+
+@use "../abstracts" as *;
+
+.plan {
+    padding: 4rem 2.5rem;
+
+    @media screen and (max-width: $tablet) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    &--seller {
+        background-color: $primary-color;
+    }
+
+    &--distributor {
+        background-color: $background-color;
+    }
+
+    &__h2 {
+        font-size: 6rem;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1;
+        padding-bottom: 2rem;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 3rem;
+        }
+
+        &--seller {
+            color: white;
+        }
+
+        &--distributor {
+            color: $primary-color
+        }
+    }
+
+    &__p {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 2rem;
+        }
+
+        &--seller {
+            color: white;
+        }
+
+        &--distributor {
+            color: $primary-color
+        }
+
+        &--small {
+            font-size: 1.6rem;
+            text-align: center;
+            margin: 5rem 0 2rem 0;
+        }
+    }
+
+    &__card-container {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        text-align: center;
+        margin: 0 6.2rem;
+        font-size: 0;
+        width: calc(100% - 12.4rem);
+
+        @media screen and (max-width: $tablet) {
+            width: calc(100% - 6rem);
+            margin: 3rem;
+            overflow-x: scroll;
+        }
+    }
+}
+
+// .plan--seller {}

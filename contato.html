@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Plano Selecionado</title>
+        <link rel="icon" type="image/x-icon" href="materials/img/favicon.svg">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <script src="scripts/menu.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav">
+                <button class="nav__button">
+                    <!-- SVG from: https://codepen.io/shephero/pen/LYVrdjX?editors=1010 -->
+                    <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                          <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                          <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                          <animate  class="svg-close-animation" dur="2s" id="reverse" attributeName="width" begin="indefinite" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                          <animate class="svg-open-animation" dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="indefinite" />
+                          <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                        </rect>
+                      </svg>
+                </button>
+                <ul class="nav__ul">
+                    <li class="nav__li">
+                        <a class="nav__a" href="quemsomos.html">Sobre</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Termos de Uso</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Perguntas Frequentes</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="contato.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="logo">
+                    <img class="logo__sequence" src="materials/img/sequence-logo.svg" alt="Sequence">
+                    <h1 class="logo__h1">
+                        <a class="logo__a" href="index.html">Dropshipping</a>
+                    </h1>
+            </article>
+        </header>
+        <main>
+            <article class="contact">
+                <h2 class="contact__h2">Seu plano foi selecionado!</h2>
+                <p class="contact__p">Agora, preencha corretamente o formulário abaixo para que possamos receber suas informações e contata-lo.</p>
+                <p class="contact__plano-selecionado">Plano Selecionado: </p>
+                <form>
+                    <div class="contact__row">
+                        <div class="contact__col-100">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Razão Social:*" type="text" name="razão social">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact__row">
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="CNPJ:*" type="text" name="cnpj">
+                            </label>
+                        </div>
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Nº atual de funcionários:*" type="number" name="funcionarios">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact__row">
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Endereço completo:*" type="text" name="endereco">
+                            </label>
+                        </div>
+                        <div class="contact__col-16">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Número:*" type="number" name="numero">
+                            </label>
+                        </div>
+                        <div class="contact__col-33">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Complemento:*" type="text" name="complemento">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact__row">
+                        <div class="contact__col-25">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="CEP:*" type="text" name="cep">
+                            </label>
+                        </div>
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Cidade:*" type="text" name="cidade">
+                            </label>
+                        </div>
+                        <div class="contact__col-25">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Estado:*" type="text" name="estado">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="contact__row">
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="Telefone:*" type="tel" name="telefone">
+                            </label>
+                        </div>
+                        <div class="contact__col-50">
+                            <label class="contact__label">
+                                <input class="contact__input" placeholder="E-mail:*" type="email" name="email">
+                            </label>
+                        </div>
+                    </div>
+                    <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="novidades">
+                        <span class="checkbox__span">Aceito receber novidades</span>
+                    </label>
+                    <input class="button button--submit button--blue button--contact" type="submit" value="Enviar">
+                </form>
+            </article>
+            <article class="newsletter">
+                <h2 class="newsletter__h2">Cadastre-se e receba nossas novidades!</h2>
+                <form class="newsletter__form">
+                    <label class="newsletter__label">
+                        <input class="newsletter__input" placeholder="Nome" type="text" name="nome">
+                    </label>
+                    <label class="newsletter__label">
+                        <input class="newsletter__input" placeholder="E-mail" type="text" name="email">
+                    </label>
+                    <input class="button button--submit button--blue" type="submit" value="Enviar">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <div class="info">
+                <img class="info__sequence-logo" src="materials/img/sequence-logo.svg" alt="Sequence">
+                <address class="info__address">
+                    <a class="info__a" href="#">Rua Carlos Ranzi, 316 - Sala 1 - Santa Maria, Bento Gonçalves - RS</a> <br>
+                    <a class="info__a" href="tel:054991465632">(54) 99146-5632</a> / <a class="info__a" href="tel:054996875541">(54) 99687-5541</a> <br>
+                    <a class="info__a" href="mailto:contato@goondesign.com.br">contato@goondesign.com.br</a>
+                </address>
+                <ul class="info__ul">
+                    <li class="info__li"><a class="info__a" href="#">Home</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Termos de Uso</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bar">
+                <img class="footer-bar__goon-logo" src="materials/img/goon-logo.svg" alt="Goon">
+                <small class="footer-bar__small">@2021 - Todos os direitos reservados</small>
+            </div>
+        </footer>
+        <a class="scroll-to-top" href="#" title="Voltar ao topo">
+            <img class="scroll-to-top__img" src="materials/img/chevron-thin-up.svg" width="24" height="24" aria-hidden="true" alt="voltar para o topo da página">
+        </a>
+    </body>
+</html>

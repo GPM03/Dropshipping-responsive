@@ -1,0 +1,17 @@
+// This file contains all application-wide Sass variables.
+
+// Main brand color
+$primary-color: #023DFF;
+
+// Background color
+$background-color: #EDEDED;
+
+// Breakpoints
+$mobile: 20rem; // 320px
+$tablet: 46.25rem; // 740px
+$desktop: 61.25rem; // 980px
+$wide: 81.25rem; // 1300px
+
+// breakpoints for when the layout breaks
+$benefits-mq: 75rem; // 1200px
+$nav-mq: 72.5rem; // 1160px

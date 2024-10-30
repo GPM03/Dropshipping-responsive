@@ -1,0 +1,43 @@
+// This file contains all styles related to the info.
+
+@use "../abstracts" as *;
+
+.info {
+    padding: 5rem 7.32vw;
+    font-size: 1.6rem;
+
+    &__sequence-logo {
+        display: block;
+        width: 23rem;
+        padding-bottom: 2rem;
+
+        @media screen and (max-width: $tablet) {
+            width: 14rem;
+        }
+    }
+
+    &__a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__address {
+        display: inline-block;
+        line-height: 2;
+        font-style: normal;
+    }
+
+    &__ul {
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 7.32vw;
+
+        @media screen and (max-width: $desktop) {
+            display: block;
+            padding-left: 0;
+        }
+
+    }
+
+    // &__li{}
+}

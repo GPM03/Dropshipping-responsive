@@ -1,0 +1,57 @@
+// This file contains all styles related to the newsletter.
+
+@use "../abstracts" as *;
+
+.newsletter {
+    padding: 3.66vw;
+    display: block;
+
+    &__h2 {
+        color: $primary-color;
+        font-size: 4rem;
+        text-align: center;
+        line-height: 1.5;
+        font-weight: lighter;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    &__form {
+        text-align: center;
+
+    }
+
+    &__label {
+        display: inline-block;
+        margin: 2rem;
+
+        @media screen and (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__input {
+        
+        border: none;
+        padding: 1rem 1rem 1rem 1.8rem;
+        font: inherit;
+        font-size: 1.6rem;
+        width: 30rem;
+
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: black;
+            opacity: 1;
+        }
+
+        &::-ms-input-placeholder { /* Edge 12-18 */
+            color: black;
+            opacity: 1;
+          }
+    }
+}

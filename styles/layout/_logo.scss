@@ -1,0 +1,104 @@
+// This file contains all styles related to the logo.
+
+@use "../abstracts" as *;
+
+.logo {
+    margin: 0 9rem;
+    padding-top: 7rem;
+
+    @media screen and (max-width: $tablet) {
+        margin: 0 3rem 0 3rem;
+    }
+
+    &--home {
+        padding: 0;
+        margin: 15rem 9rem 9rem 9rem;
+        width: calc(100% - 18rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        @media screen and (max-width: $tablet) {
+            width: calc(100% - 6rem);
+            flex-wrap: wrap;
+            margin: 15rem 3rem 9rem 3rem;
+        }
+
+        @media screen and (min-width: $mobile) and (max-width: $desktop) {
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15rem 3rem 9rem 3rem;
+            width: calc(100% - 6rem);
+        }
+    }
+
+    &__container {
+        display: inline-block;
+        width: 56.85rem; //same width as the h1--home
+        
+        
+    }
+
+    &__sequence {
+        margin-left: 0.3rem;
+        width: 9rem;
+        display: inline-block;
+
+        &--home {
+            display: block;
+            width: 18rem;
+            margin-left: 0.7rem;
+
+            @media screen and (max-width: $tablet) {
+                width: 9rem;
+                margin-left: 0.35rem;
+            }
+        }
+    }
+
+    &__h1{
+        font-size: 4.2rem;
+        margin: 0;
+        line-height: 4.5rem;
+        font-weight: bold;
+        color: $primary-color;
+        
+        &--home {
+            font-size: 9rem;
+            line-height: 0;
+            margin: 6rem 0;
+
+
+            @media screen and (max-width: $tablet) {
+                font-size: 3.6rem;
+                margin: 3rem 0;
+            }
+        }
+    }
+
+    &__a {
+        text-decoration: none;
+        &:active, &:focus, &:link, &:visited {
+            text-decoration: inherit;
+            color: inherit;
+        }
+    }
+
+    &__p {
+        width: 100%;
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+
+    &__img-business {
+        min-width: 27rem;
+        max-width: 50rem;
+        width: 44%;
+
+        @media screen and (max-width: $desktop) {
+            width: 100%;
+        }
+        
+    }
+}

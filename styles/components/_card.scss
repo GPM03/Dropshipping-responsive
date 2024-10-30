@@ -1,0 +1,123 @@
+// This file contains all styles related to the card component.
+
+@use "../abstracts" as *;
+
+.card {
+    display: inline-block;
+    text-align: center;
+    width: 37rem;
+    transition: box-shadow 0.2s;
+    transition-timing-function: ease-in-out;
+    padding-bottom: 4rem;
+    border-radius: 5rem;
+    margin: 0 1.5rem 1rem 1.5rem;
+
+    &--seller {
+        background-color: $background-color;
+
+        &:hover {
+            box-shadow: 0 0 5px 3px $background-color;
+        }
+    }
+
+    &--distributor {
+        background-color: $primary-color;
+
+        &:hover {
+            box-shadow: 0 0 5px 3px $primary-color;
+        }
+    }
+
+    &__h3 {
+        font-size: 4.4rem;
+        font-weight: bold;
+
+        &--seller {
+            color: $primary-color;
+        }
+
+        &--distributor {
+            color: $background-color;
+        }
+    }
+
+    &__ul {
+    display: inline-block;
+    }
+
+    &__li {
+        font-size: 1.6rem;
+        list-style: none;
+
+        &:last-of-type {
+            margin-top: 3rem;
+        }
+
+        &--seller {
+            color: black;
+        }
+
+        &--distributor {
+            color: white;
+        }
+    }
+
+    &__abbr[title] {
+        text-decoration: none;
+    }
+
+    &__scroll {
+        cursor: pointer;
+        border: none;
+
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+
+        &-left {
+
+            &--seller {
+                background-color: $primary-color;
+                position: relative;
+                left: 0;
+                bottom: 21.5rem;
+            }
+
+            &--distributor {
+                background-color: $background-color;
+                position: relative;
+                left: 0;
+                bottom: 21.5rem;
+            }
+
+        }
+
+        &-right {
+
+            &--seller {
+                background-color: $primary-color;
+                position: relative;
+                float: right;
+                bottom: 21.5rem;
+            }
+
+            &--distributor {
+                background-color: $background-color;
+                position: relative;
+                float: right;
+                bottom: 21.5rem;
+            }
+        }
+
+        &-img {
+            width: 3.5rem;
+            &--seller {
+                filter: invert(82%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(104%) contrast(102%);
+            }
+    
+            &--distributor {
+                filter: invert(10%) sepia(100%) saturate(0%) hue-rotate(107deg) brightness(104%) contrast(102%);
+            }
+        }
+    }
+}

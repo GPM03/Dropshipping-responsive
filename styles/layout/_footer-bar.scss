@@ -1,0 +1,22 @@
+// This file contains all styles related to the footer-bar.
+
+@use "../abstracts" as *;
+
+.footer-bar {
+    background-color: $primary-color;
+    clear: right;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+
+    &__goon-logo {
+        width: 9rem;
+        @media screen and (max-width: $tablet) {
+            width: 7rem;
+        }
+    }
+
+    &__small {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dropshipping</title>
+        <link rel="icon" type="image/x-icon" href="materials/img/favicon.svg">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <script src="scripts/scroll-button.js" defer></script>
+        <script src="scripts/menu.js" defer></script>
+    </head>
+
+    <body class="page page--home">
+        <header>
+            <nav class="nav">
+                <button class="nav__button">
+                    <!-- SVG from: https://codepen.io/shephero/pen/LYVrdjX?editors=1010 -->
+                    <svg class="nav__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                          <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                          <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                          <animate  class="svg-close-animation" dur="2s" id="reverse" attributeName="width" begin="indefinite" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                          <animate class="svg-open-animation" dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="indefinite" />
+                          <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                        </rect>
+                      </svg>
+                </button>
+                <ul class="nav__ul">
+                    <li class="nav__li">
+                        <a class="nav__a" href="quemsomos.html">Sobre</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Termos de Uso</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="#">Perguntas Frequentes</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__a" href="contato.html">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <article class="logo logo--home">
+                <div class="logo__container">
+                    <img class="logo__sequence logo__sequence--home" src="materials/img/sequence-logo.svg" alt="Sequence">
+                    <h1 class="logo__h1 logo__h1--home">
+                        <a class="logo__a" href="index.html">Dropshipping</a>
+                    </h1>
+                    <p class="logo__p">
+                        Uma solução estratégica e validada para o cenário do e-commerce brasileiro, destinado aos sellers que não possuem ou não querem estoque físico de produto e dependem de processos manuais para tratar o fluxo de pedidos e reposição de saldo de produtos com seus distribuidores.
+                        <a class="button button--logo button--blue" href="#">Conheça</a>
+                    </p>
+                </div>
+                <img class="logo__img-business" src="materials/img/business.svg" alt="negócio">
+            </article>
+        </header>
+
+        <main>
+        <article class="sequence">
+            <h2 class="sequence__h2">Por que escolher o Sequence?</h2>
+            <p class="sequence__p">O <strong class="sequence__strong">SEQUENCE WEB DROPSHIPPING</strong> é uma ferramenta online que disponibiliza diversas ferramentas para auxiliar na gestão de processos de pequenas e médias empresas. Por se tratar de um sistema WEB você tem acesso de qualquer lugar através de seu navegador, e melhor ainda, pois, não há necessidade de investir em estrutura de tecnologia de informação para utiliza-lo, apenas internet.</p>
+            <ul class="sequence__ul">
+                <li class="sequence__li">Melhora a conexão entre distribuidores e revendedores.</li>
+                <li class="sequence__li">Automatiza a reposição do saldo de produtos pelo fornecedor aos sellers conectados e entre os sellers.</li>
+                <li class="sequence__li">Facilita o desmembramento (<b class="sequence__b">SPLIT</b>) de vendas, direcionando cada produto aos seus devidos fornecedores.</li>
+                <li class="sequence__li">Oferece aos sellers a possiblidade de redução do prazo de entrega, visando alavancar a competitivade do e-commerce.</li>
+                <li class="sequence__li">Possibilita ao e-commerce/seller tornar-se um Marketplace.</li>
+            </ul>
+            <a class="button button--sequence button--blue" href="#">Conheça mais produtos</a>
+        </article>
+
+        <article class="plan plan--seller">
+            <h2 class="plan__h2 plan__h2--seller">Conheça nossos planos para sellers</h2>
+            <p class="plan__p plan__p--seller">Planos com modalidades acessíveis para auxiliar você!</p>
+            <div class="plan__card-container plan__card-container--seller">
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--seller">
+                    <h3 class="card__h3 card__h3--seller"><abbr class="card__abbr card__abbr--seller" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--seller">1 sellers SP</li>
+                        <li class="card__li card__li--seller">1 seller PV</li>
+                        <li class="card__li card__li--seller">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--seller">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--blue" href="contato.html">Quero este!</a>
+                </article>
+            </div>
+
+            <button class="card__scroll card__scroll-left--seller" title="Voltar">
+                <img class="card__scroll-img card__scroll-img--seller" src="materials/img/chevron-thin-left.svg" aria-hidden="true">
+            </button>
+            <button class="card__scroll card__scroll-right--seller"  title="Avançar">
+                <img class="card__scroll-img card__scroll-img--seller" src="materials/img/chevron-thin-right.svg" aria-hidden="true">
+            </button>
+
+            <p class="plan__p--small plan__p--seller">Havendo necessidade de upgrade de plano, deverá ser solicitado por e-mail ao suporte.</p>
+        </article>
+
+        <article class="plan plan--distributor">
+            <h2 class="plan__h2 plan__h2--distributor">Conheça nossos planos para distribuidores</h2>
+            <p class="plan__p plan__p--distributor">Planos com modalidades acessíveis para auxilar você!</p>
+            <div class="plan__card-container plan__card-container--distributor">
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+
+                <article class="card card--distributor">
+                    <h3 class="card__h3 card__h3--distributor"><abbr class="card__abbr card__abbr--distributor" title="Pacote 10">P10</abbr></h3>
+                    <ul class="card__ul">
+                        <li class="card__li card__li--distributor">1 sellers SP</li>
+                        <li class="card__li card__li--distributor">1 seller PV</li>
+                        <li class="card__li card__li--distributor">10 distribuidores</li>
+                    </ul>
+                    <strong class="price price--distributor">
+                        <span class="price__left-digit">R$59,</span>
+                        <span class="price__supsub-container">
+                            <sup class="price__sup">90</sup>
+                            <sub class="price__sub">Mensais</sub>
+                        </span>
+                    </strong>
+                    <a class="button button--card button--white" href="contato.html">Quero este!</a>
+                </article>
+                
+            </div>
+            
+            <button class="card__scroll card__scroll-left--distributor" title="Voltar">
+                <img class="card__scroll-img card__scroll-img--distributor" src="materials/img/chevron-thin-left.svg" aria-hidden="true">
+            </button>
+            <button class="card__scroll card__scroll-right--distributor"  title="Avançar">
+                <img class="card__scroll-img card__scroll-img--distributor" src="materials/img/chevron-thin-right.svg" aria-hidden="true">
+            </button>
+
+            <p class="plan__p--small plan__p--distributor">Havendo necessidade de upgrade de plano, deverá ser solicitado por e-mail ao suporte.</p>
+        
+        </article>
+
+        <article class="balance">
+            <h2 class="balance__h2">Atualização de saldo</h2>
+            <ul class="balance__ul">
+                <li class="balance__li">1 seller SP</li>
+                <li class="balance__li">Para sellers e distribuidores</li>
+            </ul>
+            <strong class="price price--balance">
+                <span class="price__left-digit price__left-digit--balance">R$19,</span>
+                <span class="price__supsub-container">
+                    <sup class="price__sup">90</sup>
+                    <sub class="price__sub">Mensais</sub>
+                </span>
+                <a class="button button--white button--balance" href="contato.html">Quero este!</a>
+            </strong>
+        </article>
+
+        <article class="newsletter">
+            <h2 class="newsletter__h2">Cadastre-se e receba nossas novidades!</h2>
+            <form class="newsletter__form">
+                <label class="newsletter__label">
+                    <input class="newsletter__input" placeholder="Nome" type="text" name="nome">
+                </label>
+                <label class="newsletter__label">
+                    <input class="newsletter__input" placeholder="E-mail" type="text" name="email">
+                </label>
+                <input class="button button--submit button--blue" type="submit" value="Enviar">
+            </form>
+        </article>
+        </main>
+
+        <footer>
+            <div class="info">
+                <img class="info__sequence-logo" src="materials/img/sequence-logo.svg" alt="Sequence">
+                <address class="info__address">
+                    <a class="info__a" href="#">Rua Carlos Ranzi, 316 - Sala 1 - Santa Maria, Bento Gonçalves - RS</a> <br>
+                    <a class="info__a" href="tel:054991465632">(54) 99146-5632</a> / <a class="info__a" href="tel:054996875541">(54) 99687-5541</a> <br>
+                    <a class="info__a" href="mailto:contato@goondesign.com.br">contato@goondesign.com.br</a>
+                </address>
+                <ul class="info__ul">
+                    <li class="info__li"><a class="info__a" href="#">Home</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Termos de Uso</a></li>
+                    <li class="info__li"><a class="info__a" href="#">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bar">
+                <img class="footer-bar__goon-logo" src="materials/img/goon-logo.svg" alt="Goon">
+                <small class="footer-bar__small">@2021 - Todos os direitos reservados</small>
+            </div>
+        </footer>
+            <a class="scroll-to-top" href="#" title="Voltar ao topo">
+                <img class="scroll-to-top__img" src="materials/img/chevron-thin-up.svg" width="24" height="24" aria-hidden="true" alt="voltar para o topo da página">
+            </a>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+// This file contains all styles related to the nav of the site/application.
+
+@use "../abstracts" as *;
+
+/* navegação superior */
+
+.nav {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+
+    // // trocar isso por javascript
+
+    // &:hover &__ul {
+    //     display: block;
+    // }
+
+    &__button {
+        display: none;
+        border: 1px solid white;
+        border-radius: 1rem;
+        padding: 1rem;
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        background-color: $primary-color;
+        z-index: 1;
+        cursor: pointer;
+
+        @media screen and (max-width: $nav-mq) {
+            display: block;
+        }
+    }
+
+    &__svg {
+        vertical-align: middle;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    &__ul {
+        list-style-type: none;
+        font-size: 2rem;
+        padding-right: 6rem;
+
+        @media screen and (max-width: $nav-mq) {
+            background-color: $primary-color;
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding-right: 10rem;
+            height: 100%;
+            border-left: 1px solid white;
+        }
+    }
+
+    &__li {
+        float: left;
+        padding: 6rem 3rem 3rem 3rem;
+
+        @media screen and (max-width: $nav-mq) {
+            float: none;
+            display: block;
+            padding: 2rem 0 0 2rem;
+        }
+
+    }
+
+    &__a {
+        display: inline-block;
+        color: $primary-color;
+        text-decoration: none;
+
+        @media screen and (max-width: $nav-mq) {
+            color: white;
+        }
+
+    }
+
+}
+
+.show {display: block;}
